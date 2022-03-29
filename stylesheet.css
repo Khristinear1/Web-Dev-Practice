@@ -1,0 +1,203 @@
+/* RESET - DO NOT EDIT */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ 
+* {
+    /* The width of an element will be the size of its border box, not its content box (which is the normal default). */
+    box-sizing: border-box;
+}
+
+/* END OF RESET */
+
+
+/* YOUR ANSWER HERE */
+
+/* LAYOUT */
+
+main, nav, aside, footer {
+    padding: 1em;
+}
+
+nav li {
+    margin-bottom: 0.5em;
+}
+
+aside > div {
+    margin-bottom: 2em;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.caption {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.scientific-name {
+    font-style: italic;
+}
+
+/* COLOUR SCHEME & BORDERS */
+
+body {
+    color: #444444;
+}
+
+header , footer {
+    background-color: #113a0e;
+    color: #ffff;
+}
+
+nav {
+    background-color: #c1d8be;
+}
+
+nav a {
+    color: #000000;
+}
+
+aside {
+    background-color: #dedede;
+}
+
+footer a {
+    color: #ffff;
+}
+
+.selected, a:hover {
+    color: #ff0000;
+}
+
+/* NAVIGATION */
+
+nav ul, footer ul {
+    list-style-type: none;
+}
+
+nav a, footer a {
+    text-decoration: none;
+}
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+}
+
+.lead-in {
+    width: 8em;
+    float: left;
+    margin: 0 1em 1em 0;
+    /* margin: top right bottom left */
+}
+
+/* Responsive*/
+
+
+@media screen and (min-width: 62em) {
+
+    /* Page grid*/
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 40rem 12rem 1fr;
+    }
+
+    header, nav, footer {
+        grid-column: 2 / 4;
+    }
+    
+    main {
+        grid-column: 2;
+    }
+    
+    aside {
+        grid-column: 3;
+    }
+    
+}
+
+/* Flexboxes */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 1em;
+}
+
+header img {
+    width: 12rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+   margin-right: 2em;
+   margin-bottom: 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer li {
+    margin-left: 2em;
+}
+
+#fish-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+#fish-images div {
+    width: 48%;
+}
+
+/* Margins and padding */
+
+ /* MISC */
